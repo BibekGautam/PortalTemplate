@@ -1,300 +1,370 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-<script type="text/javascript" src="js/TweenLite.min.js"></script>
-<script type="text/javascript" src="js/TweenMax.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<title>Metro UI Html Template</title>
-<style>
-	body{
-		margin:0;
-		background-color:#369;
-		overflow:auto;
-	}
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<script type="text/javascript" src="js/TweenLite.min.js"></script>
+		<script type="text/javascript" src="js/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<title>Metro UI Html Template</title>
+		<style>
+			body{
+				margin:0;
+				/*background-color:#369;*/
+				overflow:auto;
+				background: url('imgs/background.jpg');
+			}
 
-	#btn1{
-		background:#06F;
-		height:200px;
-		width:250px;
-		position:relative;
-		margin-left:10px;
-		right:-100%;
-		cursor:pointer;
-		
-		color:#FFF;
-		font-size:25px;
-		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-		line-height:300px;
-		padding-left:10px;
-		text-align:left;
-		
-		
-	}
-	#btn2{
-		background:#C30;
-		height:200px;
-		width:250px;
-		position:relative;
-		margin-left:10px;
-		right:-100%;
-		cursor:pointer;
-		
-		color:#FFF;
-		font-size:25px;
-		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-		line-height:300px;
-		padding-left:10px;
-		text-align:left;
-	}
+			#btn1{
+				background:#06F;
+				height:200px;
+				width:250px;
+				position:relative;
+				margin-left:10px;
+				right:-100%;
+				cursor:pointer;
+				
+				color:#FFF;
+				font-size:25px;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				line-height:300px;
+				padding-left:10px;
+				text-align:left;
+				
+				
+			}
+			#btn2{
+				background:#C30;
+				height:200px;
+				width:250px;
+				position:relative;
+				margin-left:10px;
+				right:-100%;
+				cursor:pointer;
+				
+				color:#FFF;
+				font-size:25px;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				line-height:300px;
+				padding-left:10px;
+				text-align:left;
+			}
 
-	#btn3{
-		background:#F60;
-		border-color:#F60;
-		height:200px;
-		width:250px;
-		position:relative;
-		margin-left:10px;
-		right:-100%;
-		cursor:pointer;
-		
-		color:#FFF;
-		font-size:25px;
-		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-		line-height:300px;
-		padding-left:10px;
-		text-align:left;
-	}
+			#btn3{
+				background:#F60;
+				border-color:#F60;
+				height:200px;
+				width:250px;
+				position:relative;
+				margin-left:10px;
+				right:-100%;
+				cursor:pointer;
+				
+				color:#FFF;
+				font-size:25px;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				line-height:300px;
+				padding-left:10px;
+				text-align:left;
+			}
 
-	#btn4{
-		background:#C3C;
-		border-color:#F60;
-		height:200px;
-		width:250px;
-		position:relative;
-		margin-left:10px;
-		right:-100%;
-		cursor:pointer;
-		
-		color:#FFF;
-		font-size:25px;
-		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-		line-height:300px;
-		padding-left:10px;
-		text-align:left;
-	}
-	#btn5{
-		background:#F36;
-		border-color:#F60;
-		height:200px;
-		width:250px;
-		position:relative;
-		margin-left:10px;
-		margin-top:30px;
-		right:-100%;
-		cursor:pointer;
-		
-		color:#FFF;
-		font-size:25px;
-		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-		line-height:300px;
-		padding-left:10px;
-		text-align:left;
-	}
+			#btn4{
+				background:#C3C;
+				border-color:#F60;
+				height:200px;
+				width:250px;
+				position:relative;
+				margin-left:10px;
+				right:-100%;
+				cursor:pointer;
+				
+				color:#FFF;
+				font-size:25px;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				line-height:300px;
+				padding-left:10px;
+				text-align:left;
+			}
+			#btn5{
+				background:#F36;
+				border-color:#F60;
+				height:200px;
+				width:250px;
+				position:relative;
+				margin-left:10px;
+				margin-top:30px;
+				right:-100%;
+				cursor:pointer;
+				
+				color:#FFF;
+				font-size:25px;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				line-height:300px;
+				padding-left:10px;
+				text-align:left;
+			}
 
-	#btn6{
-		background:#6C0;
-		height:200px;
-		width:250px;
-		position:relative;
-		margin-left:10px;
-		margin-top:30px;
-		right:-100%;
-		cursor:pointer;
-		
-		color:#FFF;
-		font-size:25px;
-		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-		line-height:300px;
-		padding-left:10px;
-		text-align:left;
-	}
+			#btn6{
+				background:#6C0;
+				height:200px;
+				width:250px;
+				position:relative;
+				margin-left:10px;
+				margin-top:30px;
+				right:-100%;
+				cursor:pointer;
+				
+				color:#FFF;
+				font-size:25px;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				line-height:300px;
+				padding-left:10px;
+				text-align:left;
+			}
 
-	#content{
-		background:#369;
-		height:480px;
-		width:100%;
-		position:relative;
-		top:500px;
-		z-index:0;
-	}
+			#content{
+				background:#369;
+				height:480px;
+				width:100%;
+				position:relative;
+				top:500px;
+				z-index:0;
+			}
 
-	#backbutton{
-		position:absolute;
-		/*left:760px;*/
-		left:auto;
-		right: -50px;
-		cursor:pointer;
-		height:44px; width:44px; margin-top:15px; 
+			#backbutton{
+				position:absolute;
+				/*left:760px;*/
+				left:auto;
+				right: -50px;
+				cursor:pointer;
+				height:44px; 
+				width:44px;
+				margin-top:15px; 
 
-	}
+			}
 
-	#caption{
-		position:relative;
-		top:-60px;
-		
-		color:#FFF;
-		font-size:25px;
-		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	}
-	#pagecaption{
-		position:relative;
-		top:-60px;
-		
-		color:#FFF;
-		font-size:25px;
-		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	}
-	.navbar.navbar-default{
-		background-color:#333;
-		margin-bottom: 0;
-	}
-	.menu-right .fa{
-		font-size: 25px;
-	}
-	.navbar-right{
-		margin-right: 0;
-	}
-</style>
-</head>
+			#caption{
+				position:relative;
+				top:-60px;
+				color:#FFF;
+				font-size:25px;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			}
+			#pagecaption{
+				position: absolute;
+				top:-100px;
+				left: 0;
+				color:#FFF;
+				font-size:25px;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			}
+			#blockcaption{
+				position:absolute;
+				top:-100px;
+				color:#FFF;
+				font-size:25px;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			}
 
-<body link="#FFFFFF">
-	<!-- header -->
-	<nav class="navbar navbar-default" style="border: 0;border-radius: 0;">
-		<div class="navbar-header">
-			<a href="" class="navbar-brand" id="caption"> FAMAS</a>
+			.blockcaption{
+
+				height:44px; 
+				margin-top:20px;
+				float:left; 
+				margin-left:12px; 
+				position:absolute;
+			}
+			.pagecaption{
+				position:absolute; 
+				left: 0;
+				top: -100px ;
+				height:44px; 
+				margin-top:20px;
+				/*float:left; */
+				margin-left:12px;
+			}
+			.navbar.navbar-default{
+				background-color:#333;
+				margin-bottom: 0;
+				border: 0;
+				border-radius: 0;
+			}
+			.navbar-right{
+				margin-right: 0;
+			}
+			.navbar-right .fa{
+				font-size: 25px;
+			}
+			.wrapper{
+				height: 700px;
+				max-height: 700px;
+				overflow-y: auto;
+				margin: 50px 0;
+				background: #369;
+			}
+			.block-header{
+				height:80px; 
+				overflow:hidden;  
+				position: relative;
+				background: #333;
+			}
+			.block-content{
+				padding: 20px 0;
+			}
+			.block-buttons{
+				width:100%;
+				overflow:hidden; 
+				position:relative; 
+				margin-top:35px;
+			}
+			.footer{
+				width:100%; 
+				padding: 20px 0;
+				overflow:hidden; 
+				background-color:#333; 
+				margin-top:20px;
+				text-align:center; 
+				color:#FFF; 
+				font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small;
+			}
+		</style>
+	</head>
+
+	<body link="#FFFFFF">
+		<!-- header -->
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<a href="" class="navbar-brand" id="caption"> FAMAS</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="">Dash</a></li>
+	   			<li><a href=""><i class="fa fa-user" aria-hidden="true"></i></a></li>
+			</ul>
+		</nav>
+		<!--header end-->
+		<!-- content container -->
+		<div class="container">
+			<div class="wrapper">
+				<div class="block-header" style=>
+				  	<div>
+				        <div id="backbutton" class="backbutton" > <img src="imgs/backbtn.png" width="44" height="44" /> </div>
+				        <div id="blockcaption" class="blockcaption">FAMAS</div>
+				       	<div id="pagecaption" class="pagecaption"> Caption </div>
+				  	</div>
+				</div>
+			  	<div class="block-content">
+					<!--buttons-->	
+					<div class="block-buttons" >
+						<a href="1.html" target="main"><div id="btn1" class="block_btn" style="float:left"> <p> Activity Calendar </p> </div> </a>
+					    <a href="2.html" target="main"><div id="btn2" class="block_btn" style="float:left"> <p> Reservation </p> </div> </a>
+					    <a href="3.html" target="main"><div id="btn3" class="block_btn" style="float:left"> <p> Report </p> </div> </a>
+					    <a href="4.html" target="main"><div id="btn4" class="block_btn" style="float:left"> <p> Visitor Registration </p> </div> </a>
+					    <a href="5.html" target="main"><div id="btn5" class="block_btn" style="float:left"> <p> Inventory </p> </div> </a>
+					    <a href="6.html" target="main"><div id="btn6" class="block_btn" style="float:left"> <p> key Management </p> </div> </a>
+					    <!-- iframe-container -->
+					    <div id="content" style="position:absolute">
+					    	<iframe name="main" frameborder=0 height=750 width=100%></iframe>  
+					    </div>
+					    <!-- iframe-container end -->
+					</div>
+				</div>
+				
+			</div> 
 		</div>
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="">Dash</a></li>
-   			<li><a href=""><i class="fa fa-user" aria-hidden="true"></i></a></li>
-		</ul>
-	</nav>
-	<!--header end-->
-<div class="" style="background: url('imgs/background.jpg');">
-
-	<div class="container" style=" height:10%; overflow:hidden;  position: relative;">
-	  	
-
-	  	<div  style="height:80px; overflow:hidden; position:relative">
-	        
-	        <div id="backbutton" class="backbutton" > <img src="imgs/backbtn.png" width="44" height="44" /> </div>
-	        
-	       	<div id="pagecaption" style="height:44px; margin-top:20px;float:left; margin-left:12px; position:absolute"> Caption </div>
-	       	
-	  	</div>
-	</div>
-
-  	<div class="container" style="height:82%;">
-	<!--buttons-->	
-		<div style="width:100%; overflow:hidden; position:relative; margin-top:35px;">
-
-			<a href="1.html" target="main"><div id="btn1" class="block_btn" style="float:left"> <p> Activity Calendar </p> </div> </a>
-		    <a href="2.html" target="main"><div id="btn2" class="block_btn" style="float:left"> <p> Reservation </p> </div> </a>
-		    <a href="3.html" target="main"><div id="btn3" class="block_btn" style="float:left"> <p> Report </p> </div> </a>
-		    <a href="4.html" target="main"><div id="btn4" class="block_btn" style="float:left"> <p> Visitor Registration </p> </div> </a>
-		    <a href="5.html" target="main"><div id="btn5" class="block_btn" style="float:left"> <p> Inventory </p> </div> </a>
-		    <a href="6.html" target="main"><div id="btn6" class="block_btn" style="float:left"> <p> key Management </p> </div> </a>
-		    <div id="content" style="position:absolute"> <iframe name="main" frameborder=0 height=750 width=100%></iframe>  </div>
-		    
+		<!--content container-end -->
+		<!--footer-->
+		<div class="footer">
+		    <p ><a href="http://www.">FAMAS Facility Management Solutions BV</a> &copy; 2018 All rights reserved. </p>
+		    <!--<p style="text-align:center; color:#CCC; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small">client</p>-->
 		</div>
-	</div>
-</div>
-	
-	<!--footer-->
-	<div style="width:100%; height:8%; overflow:hidden; margin: 0 auto; background-color:#333; margin-top:20px;">
-	    <div style="width:750px; height:80px; margin: 0 auto;">
-	    <p style="text-align:center; color:#FFF; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small"><a href="http://www.">FAMAS Facility Management Solutions BV</a> &copy; 2018 All rights reserved. </p>
-	    <!--<p style="text-align:center; color:#CCC; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small">client</p>-->
-	    </div>
-	</div>
+		<!-- footer end -->
 
-	<script type="text/javascript">
-	$(document).ready(function(){
-	  TweenLite.to($("#caption"),2,{css:{top:0},delay:1, ease:Power2.easeOut});
-	  TweenLite.to($("#btn1"),2,{css:{left:0},delay:2, ease:Power2.easeOut});
-	  TweenLite.to($("#btn2"),2,{css:{left:20},delay:2.5, ease:Power2.easeOut});
-	  TweenLite.to($("#btn3"),2,{css:{left:40},delay:3, ease:Power2.easeOut});
-	  TweenLite.to($("#btn4"),2,{css:{left:60},delay:3.5, ease:Power2.easeOut});
-	  TweenLite.to($("#btn5"),2,{css:{left:0},delay:4, ease:Power2.easeOut});
-	  TweenLite.to($("#btn6"),2,{css:{left:20},delay:4.5, ease:Power2.easeOut});
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  	TweenLite.to($("#caption"),2,{css:{top:0},delay:1, ease:Power2.easeOut});
+			 	TweenLite.to($("#btn1"),2,{css:{left:15},delay:2, ease:Power2.easeOut});
+			  	TweenLite.to($("#btn2"),2,{css:{left:30},delay:2.5, ease:Power2.easeOut});
+			  	TweenLite.to($("#btn3"),2,{css:{left:45},delay:3, ease:Power2.easeOut});
+			  	TweenLite.to($("#btn4"),2,{css:{left:60},delay:3.5, ease:Power2.easeOut});
+			  	TweenLite.to($("#btn5"),2,{css:{left:15},delay:4, ease:Power2.easeOut});
+			  	TweenLite.to($("#btn6"),2,{css:{left:30},delay:4.5, ease:Power2.easeOut});
 
-	  TweenLite.to($("#pagecaption"),2,{css:{top:0},delay:1, ease:Power2.easeOut});
-	   
-	  });
-	  
-	  
-	  $("#btn1").click(function(){
-		  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
-		  TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
-		  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
-		  // TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
-		  $("#pagecaption").text("Activity Calendar");	 
-	  });
-	  
-	  $("#btn2").click(function(){
-		  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
-		  TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
-		  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
-		  // TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
-		  $("#pagecaption").text("Reservation");
-		 
-	  });
-	  
-	  $("#btn3").click(function(){
-		  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
-		  TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
-		  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
-		  // TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
-		  $("#pagecaption").text("Report");
-		 
-	  });
-	  
-	  $("#btn4").click(function(){
-		  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
-		  TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
-		  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
-		  // TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
-		  $("#pagecaption").text("Visitor Registration");
-		 
-	  });
-	  
-	  $("#btn5").click(function(){
-		  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
-		  TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
-		  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
-		  // TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
-		  $("#pagecaption").text("Inventory");
-		 
-	  });
-	  
-	   $("#btn6").click(function(){
-		  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
-		  TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
-		  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
-		  // TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
-		  $("#pagecaption").text("key Management");	 
-	  });
-	  
-	  
-	   $("#backbutton").click(function(){
-		    TweenLite.to($("#content"),1,{css:{top:500}, ease:Power2.easeIn});
-			TweenLite.to($("#backbutton"),1,{css:{right:-50, rotation:0}, ease:Power2.easeIn});
-			TweenLite.to($("#pagecaption"),1,{css:{top:-60}, ease:Power2.easeOut});
-			TweenLite.to($("#caption"),1,{css:{top:0}, ease:Power2.easeOut});
-		});   
-	</script>	
+			  	TweenLite.to($("#blockcaption"),2,{css:{top:0},delay:1, ease:Power2.easeOut});
+		   
+		  	});
+		  	$("#btn1").click(function(){
+			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100},delay:1, ease:Power2.easeOut});
+			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
+			  	setTimeout(function(){
+			  		$("#pagecaption").text("Activity Calendar");
+			  		TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut})
+			  	},500);
+		  	});
+		  
+		  	$("#btn2").click(function(){
+			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
+			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
+			  	setTimeout(function(){
+				  	$("#pagecaption").text("Reservation");
+				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	},500);
+		  	});
+		  
+		  	$("#btn3").click(function(){
+			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
+			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
+			  	setTimeout(function(){
+				  	$("#pagecaption").text("Report");
+				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	},500);
+			 
+		  	});
+		  
+		  	$("#btn4").click(function(){
+			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
+			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
+			  	setTimeout(function(){
+			  		$("#pagecaption").text("Visitor Registration");
+				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	},500);
+			 
+		  	});
+		  
+		  	$("#btn5").click(function(){
+			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
+			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
+			  	setTimeout(function(){
+				  	$("#pagecaption").text("Inventory");
+				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	},500);
+			 
+		  	});
+		  
+		   	$("#btn6").click(function(){
+			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
+			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
+			  	setTimeout(function(){
+			  		$("#pagecaption").text("key Management");
+				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	},500);
+			  	
+		  	});
+		  
+		  
+		   	$("#backbutton").click(function(){
+			    TweenLite.to($("#content"),1,{css:{top:500}, ease:Power2.easeIn});
+				TweenLite.to($("#backbutton"),1,{css:{right:-50, rotation:0}, ease:Power2.easeIn});
+				TweenLite.to($("#pagecaption"),1,{css:{top:-100}, ease:Power2.easeIn});
+				TweenLite.to($("#blockcaption"),1,{css:{top:0}, ease:Power2.easeOut});
+			});   
+		</script>	
 
-</body>
+	</body>
 </html>
