@@ -1,0 +1,4 @@
+1.flip tiles to show desciption of poral group
+2.add,edit,delete button in middle bar
+3.top bar color and font size from settings
+4.tiles animation from settings

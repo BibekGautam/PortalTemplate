@@ -6,7 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<script type="text/javascript" src="js/TweenLite.min.js"></script>
 		<script type="text/javascript" src="js/TweenMax.min.js"></script>
-		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<title>Metro UI Html Template</title>
 		<style>
 			body{
@@ -15,114 +16,163 @@
 				overflow:auto;
 				background: url('imgs/background.jpg');
 			}
+			.navbar{
+				min-height: unset;
+				max-height: 55px;
+			}
+			.navbar.navbar-inverse{
+				background-color:#333;
+				margin-bottom: 0;
+				border: 0;
+				border-radius: 0;
+			}
+			.navbar-right{
+				margin-right: 0;
+			}
+			.navbar-right .fa{
+				font-size: 25px;
+			}
+			.navbar-inverse .navbar-nav li:hover a,
+			.navbar-inverse .navbar-nav li a:hover{
+				/*color:#fff;*/
+			}
+			.navbar-inverse .navbar-form{
+				margin: 15px 0;
+			}
+			.navbar-inverse .navbar-form select{
+				height: 25px;
+				padding: 2px;
+			}
+			.navbar-inverse .navbar-form .form-control{
+				background: #333;
+				color: #9d9d9d;
+				border-color: #9d9d9d;
+				box-shadow: unset;
+				-webkit-box-shadow:unset;
+			}
+			.navbar-inverse .navbar-form .form-control:focus{
+				background: #333;
+				color: #9d9d9d;
+			}
+			.navbar-nav .dropdown .dropdown-menu{
+				background: #333;
+			}
+			.navbar-nav .dropdown .dropdown-menu li a {
+				color: #9d9d9d;
+			}
+			.navbar-nav .dropdown .dropdown-menu li a .fa{
+				font-size: 14px;
+				color: #9d9d9d;
+			}
+			.navbar-nav .dropdown .dropdown-menu li a:hover {
+				background: transparent;
+				color: #fff;
+			}
 
-			#btn1{
-				background:#06F;
+			.navbar-nav .dropdown .dropdown-menu li a:hover .fa{
+				color: #fff;
+			}
+			.wrapper{
+				height: 700px;
+				max-height: 700px;
+				overflow-y: auto;
+				margin: 50px 0;
+				background: #369;
+			}
+			.block-header{
+				height:50px; 
+				padding: 10px;
+				overflow:hidden;  
+				position: relative;
+				background: #333;
+			}
+			.block-content{
+				padding: 20px 0;
+			}
+			.block-buttons{
+				width:100%;
+				overflow:hidden; 
+				position:relative; 
+				/*margin-top:35px;*/
+			}
+			.block-btn{
+				border-color:#F60;
 				height:200px;
 				width:250px;
 				position:relative;
 				margin-left:10px;
+				margin-bottom: 20px;
 				right:-100%;
 				cursor:pointer;
-				
 				color:#FFF;
-				font-size:25px;
+				font-size:18px;
 				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-				line-height:300px;
-				padding-left:10px;
-				text-align:left;
-				
-				
+				/*line-height:300px;*/
+				padding:10px;
+				text-align:center;
+			}
+			.inner-block-btn{
+				border-color:#F60;
+				height:200px;
+				width:250px;
+				position:relative;
+				margin-left:10px;
+				margin-bottom: 20px;
+				right: 0;
+				left: 15px;
+				cursor:pointer;
+				color:#FFF;
+				font-size:18px;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				/*line-height:300px;*/
+				padding:10px;
+				text-align:center;
+			}
+			#btn1{
+				background:#06F;
 			}
 			#btn2{
 				background:#C30;
-				height:200px;
-				width:250px;
-				position:relative;
-				margin-left:10px;
-				right:-100%;
-				cursor:pointer;
-				
-				color:#FFF;
-				font-size:25px;
-				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-				line-height:300px;
-				padding-left:10px;
-				text-align:left;
 			}
-
 			#btn3{
 				background:#F60;
-				border-color:#F60;
-				height:200px;
-				width:250px;
-				position:relative;
-				margin-left:10px;
-				right:-100%;
-				cursor:pointer;
-				
-				color:#FFF;
-				font-size:25px;
-				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-				line-height:300px;
-				padding-left:10px;
-				text-align:left;
 			}
-
 			#btn4{
 				background:#C3C;
-				border-color:#F60;
-				height:200px;
-				width:250px;
-				position:relative;
-				margin-left:10px;
-				right:-100%;
-				cursor:pointer;
-				
-				color:#FFF;
-				font-size:25px;
-				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-				line-height:300px;
-				padding-left:10px;
-				text-align:left;
 			}
 			#btn5{
 				background:#F36;
-				border-color:#F60;
-				height:200px;
-				width:250px;
-				position:relative;
-				margin-left:10px;
-				margin-top:30px;
-				right:-100%;
-				cursor:pointer;
-				
-				color:#FFF;
-				font-size:25px;
-				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-				line-height:300px;
-				padding-left:10px;
-				text-align:left;
 			}
-
 			#btn6{
 				background:#6C0;
-				height:200px;
-				width:250px;
-				position:relative;
-				margin-left:10px;
-				margin-top:30px;
-				right:-100%;
-				cursor:pointer;
-				
-				color:#FFF;
-				font-size:25px;
-				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-				line-height:300px;
-				padding-left:10px;
-				text-align:left;
 			}
-
+			#btn7{
+				background:#784D44;
+			}
+			#btn8{
+				background:#258B5B;
+			}
+			#innerbtn1{
+				background: red;
+			}
+			#innerbtn2{
+				background: grey;
+			}
+			.block-btn p,
+			.inner-block-btn p{
+				position: relative;
+				/*bottom: 0;
+				top: auto;*/
+				margin: 10px 0;
+			}
+			.block-btn .fa,
+			.inner-block-btn .fa{
+				font-size: 140px;
+			}
+			.sub-block-buttons{
+				position: absolute;
+				bottom: -750px;
+			}
 			#content{
 				background:#369;
 				height:480px;
@@ -130,18 +180,38 @@
 				position:relative;
 				top:500px;
 				z-index:0;
+				padding:0 15px;
 			}
-
+			#content p{
+				margin: 0 0 10px;
+			}
+			#inner-block{
+				background:#369;
+				height:480px;
+				width:100%;
+				position:relative;
+				right: -100%;
+				z-index:0;	
+			}
 			#backbutton{
 				position:absolute;
 				/*left:760px;*/
 				left:auto;
 				right: -50px;
+				top: 10px;
 				cursor:pointer;
-				height:44px; 
-				width:44px;
-				margin-top:15px; 
-
+				height:35px; 
+				width:35px;
+			}
+			#innerbackbutton{
+				position:absolute;
+				/*left:760px;*/
+				left:auto;
+				right: -50px;
+				top: 10px;
+				cursor:pointer;
+				height:35px; 
+				width:35px;
 			}
 
 			#caption{
@@ -156,21 +226,19 @@
 				top:-100px;
 				left: 0;
 				color:#FFF;
-				font-size:25px;
+				font-size:20px;
 				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 			}
 			#blockcaption{
 				position:absolute;
 				top:-100px;
 				color:#FFF;
-				font-size:25px;
+				font-size:20px;
 				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 			}
 
 			.blockcaption{
-
-				height:44px; 
-				margin-top:20px;
+				margin-top:10px;
 				float:left; 
 				margin-left:12px; 
 				position:absolute;
@@ -178,46 +246,12 @@
 			.pagecaption{
 				position:absolute; 
 				left: 0;
-				top: -100px ;
-				height:44px; 
-				margin-top:20px;
+				top: -100px;
+				margin-top:10px;
 				/*float:left; */
 				margin-left:12px;
 			}
-			.navbar.navbar-default{
-				background-color:#333;
-				margin-bottom: 0;
-				border: 0;
-				border-radius: 0;
-			}
-			.navbar-right{
-				margin-right: 0;
-			}
-			.navbar-right .fa{
-				font-size: 25px;
-			}
-			.wrapper{
-				height: 700px;
-				max-height: 700px;
-				overflow-y: auto;
-				margin: 50px 0;
-				background: #369;
-			}
-			.block-header{
-				height:80px; 
-				overflow:hidden;  
-				position: relative;
-				background: #333;
-			}
-			.block-content{
-				padding: 20px 0;
-			}
-			.block-buttons{
-				width:100%;
-				overflow:hidden; 
-				position:relative; 
-				margin-top:35px;
-			}
+			/*Footer*/
 			.footer{
 				width:100%; 
 				padding: 20px 0;
@@ -233,36 +267,118 @@
 
 	<body link="#FFFFFF">
 		<!-- header -->
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-inverse">
 			<div class="navbar-header">
 				<a href="" class="navbar-brand" id="caption"> FAMAS</a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="">Dash</a></li>
-	   			<li><a href=""><i class="fa fa-user" aria-hidden="true"></i></a></li>
+				<li><a href=""><!-- <i class="fa fa-sign-in" aria-hidden="true"></i> --> Bkassels</a></li>
+	   			<li class="dropdown">
+			        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+			        </a>
+			        <ul class="dropdown-menu">
+			          	<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+			          	<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+			          	<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+			        </ul>
+			    </li>
+	   			<li class="dropdown">
+			        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i>
+			        </a>
+			        <ul class="dropdown-menu">
+			          	<li><a href="#"><i class="fa fa-info" aria-hidden="true"></i> Help</a></li>
+			          	<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+			          	<li><a href="#"><i class="" aria-hidden="true"></i> Intranet</a></li>
+			        </ul>
+			    </li>
 			</ul>
+			<form class="navbar-form navbar-right">
+				<div class="form-group">
+					<select class="form-control" name="language">
+						<option value="">De</option>
+						<option value="">Fr</option>
+					</select>
+				</div>
+			</form>
 		</nav>
 		<!--header end-->
 		<!-- content container -->
 		<div class="container">
 			<div class="wrapper">
-				<div class="block-header" style=>
+				<div class="block-header">
 				  	<div>
-				        <div id="backbutton" class="backbutton" > <img src="imgs/backbtn.png" width="44" height="44" /> </div>
-				        <div id="blockcaption" class="blockcaption">FAMAS</div>
+				        <div id="backbutton" class="backbutton" > <img src="imgs/backbtn.png" width="44" height="44" class="img-responsive" /> </div>
+				        <div id="innerbackbutton" class="backbutton" > <img src="imgs/backbtn.png" width="44" height="44" class="img-responsive" /> </div>
+				        <div id="blockcaption" class="blockcaption"></div>
 				       	<div id="pagecaption" class="pagecaption"> Caption </div>
 				  	</div>
 				</div>
 			  	<div class="block-content">
 					<!--buttons-->	
 					<div class="block-buttons" >
-						<a href="1.html" target="main"><div id="btn1" class="block_btn" style="float:left"> <p> Activity Calendar </p> </div> </a>
-					    <a href="2.html" target="main"><div id="btn2" class="block_btn" style="float:left"> <p> Reservation </p> </div> </a>
-					    <a href="3.html" target="main"><div id="btn3" class="block_btn" style="float:left"> <p> Report </p> </div> </a>
-					    <a href="4.html" target="main"><div id="btn4" class="block_btn" style="float:left"> <p> Visitor Registration </p> </div> </a>
-					    <a href="5.html" target="main"><div id="btn5" class="block_btn" style="float:left"> <p> Inventory </p> </div> </a>
-					    <a href="6.html" target="main"><div id="btn6" class="block_btn" style="float:left"> <p> key Management </p> </div> </a>
+						<!-- <a href="1.html" target="main"> -->
+							<div id="btn1" class="block-btn" style="float:left"> 
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+								<p> Activity Calendar </p>
+							</div> 
+						<!-- </a> -->
+					    <a href="2.html" target="main">
+					    	<div id="btn2" class="block-btn" style="float:left"> 
+					    		<i class="fa fa-wpforms" aria-hidden="true"></i>
+					    		<p> Reservation </p> 
+					    	</div> 
+					    </a>
+					    <a href="3.html" target="main">
+					    	<div id="btn3" class="block-btn" style="float:left">
+					    		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+						    	<p> Report </p> 
+						    </div> 
+					    </a>
+					    <a href="4.html" target="main">
+					    	<div id="btn4" class="block-btn" style="float:left">
+					    		<i class="fa fa-address-book" aria-hidden="true"></i>
+						    	<p> Visitor Registration </p> 
+						    </div> 
+					    </a>
+					    <a href="5.html" target="main">
+					    	<div id="btn5" class="block-btn" style="float:left">
+					    		<i class="fa fa-tasks" aria-hidden="true"></i>
+						    	<p> Inventory </p> 
+						    </div> 
+					    </a>
+					    <a href="6.html" target="main">
+					    	<div id="btn6" class="block-btn" style="float:left">
+					    		<i class="fa fa-key" aria-hidden="true"></i>
+						    	<p> key Management </p> 
+						    </div> 
+					    </a>
+						<a href="7.html" target="main">
+					    	<div id="btn7" class="block-btn" style="float:left">
+					    		<i class="fa fa-book" aria-hidden="true"></i>
+						    	<p> Log Book</p> 
+						    </div> 
+					    </a>
+						<a href="8.html" target="main">
+					    	<div id="btn8" class="block-btn" style="float:left">
+					    		<i class="fa fa-th" aria-hidden="true"></i>
+						    	<p> Stock Management </p> 
+						    </div> 
+					    </a>
 					    <!-- iframe-container -->
+					    <div id="inner-block" style="position: absolute;">
+					    	<a href="1.html" target="main">
+								<div id="innerbtn1" class="inner-block-btn" style="float:left"> 
+									<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+									<p> Activity Calendar </p>
+								</div> 
+							</a>
+							<a href="2.html" target="main">
+								<div id="innerbtn2" class="inner-block-btn" style="float:left"> 
+									<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+									<p> Activity Calendar </p>
+								</div> 
+							</a>
+					    </div>
 					    <div id="content" style="position:absolute">
 					    	<iframe name="main" frameborder=0 height=750 width=100%></iframe>  
 					    </div>
@@ -279,91 +395,116 @@
 		    <!--<p style="text-align:center; color:#CCC; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small">client</p>-->
 		</div>
 		<!-- footer end -->
-
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-			  	TweenLite.to($("#caption"),2,{css:{top:0},delay:1, ease:Power2.easeOut});
-			 	TweenLite.to($("#btn1"),2,{css:{left:15},delay:2, ease:Power2.easeOut});
-			  	TweenLite.to($("#btn2"),2,{css:{left:30},delay:2.5, ease:Power2.easeOut});
-			  	TweenLite.to($("#btn3"),2,{css:{left:45},delay:3, ease:Power2.easeOut});
-			  	TweenLite.to($("#btn4"),2,{css:{left:60},delay:3.5, ease:Power2.easeOut});
-			  	TweenLite.to($("#btn5"),2,{css:{left:15},delay:4, ease:Power2.easeOut});
-			  	TweenLite.to($("#btn6"),2,{css:{left:30},delay:4.5, ease:Power2.easeOut});
+			  	TweenLite.to($("#caption"),2,{css:{top:0},delay:0.1, ease:Power2.easeOut});
+			 	TweenLite.to($("#btn1"),2,{css:{left:15},delay:0.1, ease:Power2.easeOut});
+			  	TweenLite.to($("#btn2"),2,{css:{left:30},delay:0.1, ease:Power2.easeOut});
+			  	TweenLite.to($("#btn3"),2,{css:{left:45},delay:0.1, ease:Power2.easeOut});
+			  	TweenLite.to($("#btn4"),2,{css:{left:60},delay:0.1, ease:Power2.easeOut});
+			  	TweenLite.to($("#btn5"),2,{css:{left:15},delay:0.1, ease:Power2.easeOut});
+			  	TweenLite.to($("#btn6"),2,{css:{left:30},delay:0.1, ease:Power2.easeOut});
+				TweenLite.to($("#btn7"),2,{css:{left:45},delay:0.1, ease:Power2.easeOut});
+				TweenLite.to($("#btn8"),2,{css:{left:60},delay:0.1, ease:Power2.easeOut});
 
 			  	TweenLite.to($("#blockcaption"),2,{css:{top:0},delay:1, ease:Power2.easeOut});
-		   
+		   		var innerBtn = $(".inner-block-btn");
+		   		for (var i = 0; i < innerBtn.length; i++) {
+		   			left_val = (15*i)+15;
+		   			var innerBtnId = innerBtn.eq(i).attr("id");
+		   			$("#"+innerBtnId).css({'left':left_val,});
+		   		}
 		  	});
+		  	/*buttons actions*/
 		  	$("#btn1").click(function(){
 			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100},delay:1, ease:Power2.easeOut});
-			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
+			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
+			  	// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
 			  	setTimeout(function(){
 			  		$("#pagecaption").text("Activity Calendar");
 			  		TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut})
 			  	},500);
 		  	});
-		  
 		  	$("#btn2").click(function(){
 			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
-			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
+			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
+			  	// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
 			  	setTimeout(function(){
 				  	$("#pagecaption").text("Reservation");
 				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
 			  	},500);
 		  	});
-		  
 		  	$("#btn3").click(function(){
 			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
-			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
+			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
+			  	// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
 			  	setTimeout(function(){
 				  	$("#pagecaption").text("Report");
 				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
 			  	},500);
-			 
 		  	});
-		  
 		  	$("#btn4").click(function(){
 			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
-			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
+			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
+			  	// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
 			  	setTimeout(function(){
 			  		$("#pagecaption").text("Visitor Registration");
 				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
 			  	},500);
-			 
 		  	});
-		  
 		  	$("#btn5").click(function(){
 			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
-			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
+			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
+			  	// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
 			  	setTimeout(function(){
 				  	$("#pagecaption").text("Inventory");
 				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
 			  	},500);
-			 
 		  	});
-		  
 		   	$("#btn6").click(function(){
 			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
-			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:40, rotation:-180}, ease:Power2.easeOut});
+			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
+			  	// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
 			  	setTimeout(function(){
 			  		$("#pagecaption").text("key Management");
 				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
 			  	},500);
-			  	
 		  	});
-		  
-		  
+		   	/*inner buttons actions*/
+		  	$("#innerbtn1").click(function(){
+			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100},delay:1, ease:Power2.easeOut});
+			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#backbutton"),1,{css:{right:-50, rotation:0}, ease:Power2.easeOut});
+			  	TweenLite.to($("#innerbackbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
+			  	setTimeout(function(){
+			  		$("#pagecaption").text("Activity inner Calendar");
+			  		TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut})
+			  	},500);
+		  	});
+
+		  	/*outer back button action*/
 		   	$("#backbutton").click(function(){
 			    TweenLite.to($("#content"),1,{css:{top:500}, ease:Power2.easeIn});
 				TweenLite.to($("#backbutton"),1,{css:{right:-50, rotation:0}, ease:Power2.easeIn});
+				TweenLite.to($("#inner-block"),3,{css:{left:1500},ease:Power2.easeOut});
 				TweenLite.to($("#pagecaption"),1,{css:{top:-100}, ease:Power2.easeIn});
 				TweenLite.to($("#blockcaption"),1,{css:{top:0}, ease:Power2.easeOut});
-			});   
+			});
+
+			/*inner back button action*/
+			$("#innerbackbutton").click(function(){
+			    TweenLite.to($("#content"),1,{css:{top:500}, ease:Power2.easeIn});
+			    TweenLite.to($("#innerbackbutton"),1,{css:{right:-50, rotation:0}, ease:Power2.easeIn});
+				TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
+			});
 		</script>	
 
 	</body>
