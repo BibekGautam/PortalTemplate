@@ -1,16 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-		<script type="text/javascript" src="js/TweenLite.min.js"></script>
-		<script type="text/javascript" src="js/TweenMax.min.js"></script>
-		<!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<title>Metro UI Html Template</title>
-		<style>
-			body{
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script type="text/javascript" src="js/TweenLite.min.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<title>Metro UI Html Template</title>
+	<style>
+		body{
 				margin:0;
 				/*background-color:#369;*/
 				overflow:auto;
@@ -262,250 +264,334 @@
 				color:#FFF; 
 				font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small;
 			}
-		</style>
-	</head>
 
-	<body link="#FFFFFF">
-		<!-- header -->
-		<nav class="navbar navbar-inverse">
-			<div class="navbar-header">
-				<a href="" class="navbar-brand" id="caption"> FAMAS</a>
-			</div>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href=""><!-- <i class="fa fa-sign-in" aria-hidden="true"></i> --> Bkassels</a></li>
-	   			<li class="dropdown">
-			        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
-			        </a>
-			        <ul class="dropdown-menu">
-			          	<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
-			          	<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
-			          	<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
-			        </ul>
-			    </li>
-	   			<li class="dropdown">
-			        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i>
-			        </a>
-			        <ul class="dropdown-menu">
-			          	<li><a href="#"><i class="fa fa-info" aria-hidden="true"></i> Help</a></li>
-			          	<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
-			          	<li><a href="#"><i class="" aria-hidden="true"></i> Intranet</a></li>
-			        </ul>
-			    </li>
-			</ul>
-			<form class="navbar-form navbar-right">
-				<div class="form-group">
-					<select class="form-control" name="language">
-						<option value="">De</option>
-						<option value="">Fr</option>
-					</select>
-				</div>
-			</form>
-		</nav>
-		<!--header end-->
-		<!-- content container -->
-		<div class="container">
-			<div class="wrapper">
-				<div class="block-header">
-				  	<div>
-				        <div id="backbutton" class="backbutton" > <img src="imgs/backbtn.png" width="44" height="44" class="img-responsive" /> </div>
-				        <div id="innerbackbutton" class="backbutton" > <img src="imgs/backbtn.png" width="44" height="44" class="img-responsive" /> </div>
-				        <div id="blockcaption" class="blockcaption"></div>
-				       	<div id="pagecaption" class="pagecaption"> Caption </div>
-				  	</div>
-				</div>
-			  	<div class="block-content">
-					<!--buttons-->	
-					<div class="block-buttons" >
-						<!-- <a href="1.html" target="main"> -->
-							<div id="btn1" class="block-btn" style="float:left"> 
-								<i class="fa fa-calendar" aria-hidden="true"></i>
-								<p> Activity Calendar </p>
-							</div> 
-						<!-- </a> -->
-					    <a href="2.html" target="main">
-					    	<div id="btn2" class="block-btn" style="float:left"> 
-					    		<i class="fa fa-wpforms" aria-hidden="true"></i>
-					    		<p> Reservation </p> 
-					    	</div> 
-					    </a>
-					    <a href="3.html" target="main">
-					    	<div id="btn3" class="block-btn" style="float:left">
-					    		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-						    	<p> Report </p> 
-						    </div> 
-					    </a>
-					    <a href="4.html" target="main">
-					    	<div id="btn4" class="block-btn" style="float:left">
-					    		<i class="fa fa-address-book" aria-hidden="true"></i>
-						    	<p> Visitor Registration </p> 
-						    </div> 
-					    </a>
-					    <a href="5.html" target="main">
-					    	<div id="btn5" class="block-btn" style="float:left">
-					    		<i class="fa fa-tasks" aria-hidden="true"></i>
-						    	<p> Inventory </p> 
-						    </div> 
-					    </a>
-					    <a href="6.html" target="main">
-					    	<div id="btn6" class="block-btn" style="float:left">
-					    		<i class="fa fa-key" aria-hidden="true"></i>
-						    	<p> key Management </p> 
-						    </div> 
-					    </a>
-						<a href="7.html" target="main">
-					    	<div id="btn7" class="block-btn" style="float:left">
-					    		<i class="fa fa-book" aria-hidden="true"></i>
-						    	<p> Log Book</p> 
-						    </div> 
-					    </a>
-						<a href="8.html" target="main">
-					    	<div id="btn8" class="block-btn" style="float:left">
-					    		<i class="fa fa-th" aria-hidden="true"></i>
-						    	<p> Stock Management </p> 
-						    </div> 
-					    </a>
-					    <!-- iframe-container -->
-					    <div id="inner-block" style="position: absolute;">
-					    	<a href="1.html" target="main">
-								<div id="innerbtn1" class="inner-block-btn" style="float:left"> 
-									<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-									<p> Activity Calendar </p>
-								</div> 
-							</a>
-							<a href="2.html" target="main">
-								<div id="innerbtn2" class="inner-block-btn" style="float:left"> 
-									<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-									<p> Activity Calendar </p>
-								</div> 
-							</a>
-					    </div>
-					    <div id="content" style="position:absolute">
-					    	<iframe name="main" frameborder=0 height=750 width=100%></iframe>  
-					    </div>
-					    <!-- iframe-container end -->
-					</div>
-				</div>
+			.card {
+				/* height: 100%;
+				position: absolute;
+				width: 100%; */
+				transform-style: preserve-3d;
+				/* transition: all 1s ease-in-out; */
+			}
+			.card:hover {
+				transform: rotateY(180deg);
 				
-			</div> 
+			}
+			.card .side {
+				backface-visibility: hidden;
+				overflow: hidden;
+				position: absolute;
+				margin-left: 40px;
+				/* border-radius: 6px;
+				height: 100%;
+				width: 100%; */
+			}
+			.card .back {
+				backface-visibility: hidden;
+				/* background: #eaeaed;
+				color: #0087cc;
+				line-height: 150px; */
+				text-align: center;
+				transform: rotateY(180deg);
+			}
+		</style>
+</head>
+
+<body link="#FFFFFF">
+	<!-- header -->
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a href="" class="navbar-brand" id="caption"> FAMAS</a>
 		</div>
-		<!--content container-end -->
-		<!--footer-->
-		<div class="footer">
-		    <p ><a href="http://www.">FAMAS Facility Management Solutions BV</a> &copy; 2018 All rights reserved. </p>
-		    <!--<p style="text-align:center; color:#CCC; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small">client</p>-->
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="">
+					<!-- <i class="fa fa-sign-in" aria-hidden="true"></i> --> Bkassels</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+					<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+					<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#"><i class="fa fa-info" aria-hidden="true"></i> Help</a></li>
+					<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+					<li><a href="#"><i class="" aria-hidden="true"></i> Intranet</a></li>
+				</ul>
+			</li>
+		</ul>
+		<form class="navbar-form navbar-right">
+			<div class="form-group">
+				<select class="form-control" name="language">
+					<option value="">De</option>
+					<option value="">Fr</option>
+				</select>
+			</div>
+		</form>
+	</nav>
+	<!--header end-->
+	<!-- content container -->
+	<div class="container">
+		<div class="wrapper">
+			<div class="block-header">
+				<div>
+					<div id="backbutton" class="backbutton"> <img src="imgs/backbtn.png" width="44" height="44" class="img-responsive" />
+					</div>
+					<div id="innerbackbutton" class="backbutton"> <img src="imgs/backbtn.png" width="44" height="44" class="img-responsive" />
+					</div>
+					<div id="blockcaption" class="blockcaption"></div>
+					<div id="pagecaption" class="pagecaption"> Caption </div>
+				</div>
+			</div>
+			<div class="block-content">
+				<!--buttons-->
+				<div class="block-buttons">
+					<!-- <a href="1.html" target="main"> -->
+					<div id="btn1" class="block-btn card" style="float:left">
+						<div class="side">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+							<p> Activity Calendar </p>
+						</div>
+						<div class="side back">
+							Test description of the flipped card
+						</div>
+					</div>
+					<!-- </a> -->
+					<a href="2.html" target="main">
+						<div id="btn2" class="block-btn card" style="float:left">
+								<div class="side">
+							<i class="fa fa-wpforms" aria-hidden="true"></i>
+							<p> Reservation </p>
+						</div>
+						<div class="side back">
+							Test description of the flipped card
+						</div>
+						</div>
+					</a>
+					<a href="3.html" target="main">
+						<div id="btn3" class="block-btn card" style="float:left">
+								<div class="side">
+							<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+							<p> Report </p>
+						</div>
+						<div class="side back">
+							Test description of the flipped card
+						</div>
+						</div>
+					</a>
+					<a href="4.html" target="main">
+						<div id="btn4" class="block-btn card" style="float:left">
+								<div class="side">
+							<i class="fa fa-address-book" aria-hidden="true"></i>
+							<p> Visitor Registration </p>
+						</div>
+						<div class="side back">
+							Test description of the flipped card
+						</div>
+						</div>
+					</a>
+					<a href="5.html" target="main">
+						<div id="btn5" class="block-btn card" style="float:left">
+								<div class="side">
+							<i class="fa fa-tasks" aria-hidden="true"></i>
+							<p> Inventory </p>
+						</div>
+						<div class="side back">
+							Test description of the flipped card
+						</div>
+						</div>
+					</a>
+					<a href="6.html" target="main">
+						<div id="btn6" class="block-btn card" style="float:left">
+								<div class="side">
+							<i class="fa fa-key" aria-hidden="true"></i>
+							<p> key Management </p>
+						</div>
+						<div class="side back">
+							Test description of the flipped card
+						</div>
+						</div>
+					</a>
+					<a href="7.html" target="main">
+						<div id="btn7" class="block-btn card" style="float:left">
+								<div class="side">
+							<i class="fa fa-book" aria-hidden="true"></i>
+							<p> Log Book</p>
+						</div>
+						<div class="side back">
+							Test description of the flipped card
+						</div>
+						</div>
+					</a>
+					<a href="8.html" target="main">
+						<div id="btn8" class="block-btn card" style="float:left">
+								<div class="side">
+							<i class="fa fa-th" aria-hidden="true"></i>
+							<p> Stock Management </p>
+						</div>
+						<div class="side back">
+							Test description of the flipped card
+						</div>
+						</div>
+					</a>
+					<!-- iframe-container -->
+					<div id="inner-block" style="position: absolute;">
+						<a href="1.html" target="main">
+							<div id="innerbtn1" class="inner-block-btn" style="float:left">
+								<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+								<p> Activity Calendar </p>
+							</div>
+						</a>
+						<a href="2.html" target="main">
+							<div id="innerbtn2" class="inner-block-btn" style="float:left">
+								<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+								<p> Activity Calendar </p>
+							</div>
+						</a>
+					</div>
+					<div id="content" style="position:absolute">
+						<iframe name="main" frameborder=0 height=750 width=100%></iframe>
+					</div>
+					<!-- iframe-container end -->
+				</div>
+			</div>
+
 		</div>
-		<!-- footer end -->
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-			  	TweenLite.to($("#caption"),2,{css:{top:0},delay:0.1, ease:Power2.easeOut});
-			 	TweenLite.to($("#btn1"),2,{css:{left:15},delay:0.1, ease:Power2.easeOut});
-			  	TweenLite.to($("#btn2"),2,{css:{left:30},delay:0.1, ease:Power2.easeOut});
-			  	TweenLite.to($("#btn3"),2,{css:{left:45},delay:0.1, ease:Power2.easeOut});
-			  	TweenLite.to($("#btn4"),2,{css:{left:60},delay:0.1, ease:Power2.easeOut});
-			  	TweenLite.to($("#btn5"),2,{css:{left:15},delay:0.1, ease:Power2.easeOut});
-			  	TweenLite.to($("#btn6"),2,{css:{left:30},delay:0.1, ease:Power2.easeOut});
-				TweenLite.to($("#btn7"),2,{css:{left:45},delay:0.1, ease:Power2.easeOut});
-				TweenLite.to($("#btn8"),2,{css:{left:60},delay:0.1, ease:Power2.easeOut});
+	</div>
+	<!--content container-end -->
+	<!--footer-->
+	<div class="footer">
+		<p><a href="http://www.">FAMAS Facility Management Solutions BV</a> &copy; 2018 All rights reserved. </p>
+		<!--<p style="text-align:center; color:#CCC; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:x-small">client</p>-->
+	</div>
+	<!-- footer end -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			TweenLite.to($("#caption"), 2, { css: { top: 0 }, delay: 0.1, ease: Power2.easeOut,onComplete:function(){ $("#btn1").css('transition', 'all 1s ease-in-out');} });
+			TweenLite.to($("#btn1"), 2, { css: { left: 15 }, delay: 0.2, ease: Power2.easeOut,onComplete:function(){ $("#btn2").css('transition', 'all 1s ease-in-out');} });
+			TweenLite.to($("#btn2"), 2, { css: { left: 30 }, delay: 0.4, ease: Power2.easeOut,onComplete:function(){ $("#btn3").css('transition', 'all 1s ease-in-out');} });
+			TweenLite.to($("#btn3"), 2, { css: { left: 45 }, delay: 0.6, ease: Power2.easeOut,onComplete:function(){ $("#btn4").css('transition', 'all 1s ease-in-out');} });
+			TweenLite.to($("#btn4"), 2, { css: { left: 60 }, delay: 0.8, ease: Power2.easeOut,onComplete:function(){ $("#btn5").css('transition', 'all 1s ease-in-out');} });
+			TweenLite.to($("#btn5"), 2, { css: { left: 15 }, delay: 1, ease: Power2.easeOut,onComplete:function(){ $("#btn6").css('transition', 'all 1s ease-in-out');} });
+			TweenLite.to($("#btn6"), 2, { css: { left: 30 }, delay: 1.2, ease: Power2.easeOut,onComplete:function(){ $("#btn7").css('transition', 'all 1s ease-in-out');} });
+			TweenLite.to($("#btn7"), 2, { css: { left: 45 }, delay: 1.4, ease: Power2.easeOut,onComplete:function(){ $("#btn7").css('transition', 'all 1s ease-in-out');} });
+			TweenLite.to($("#btn8"), 2, { css: { left: 60 }, delay: 1.6, ease: Power2.easeOut,onComplete:function(){ $("#btn8").css('transition', 'all 1s ease-in-out');} });
 
-			  	TweenLite.to($("#blockcaption"),2,{css:{top:0},delay:1, ease:Power2.easeOut});
-		   		var innerBtn = $(".inner-block-btn");
-		   		for (var i = 0; i < innerBtn.length; i++) {
-		   			left_val = (15*i)+15;
-		   			var innerBtnId = innerBtn.eq(i).attr("id");
-		   			$("#"+innerBtnId).css({'left':left_val,});
-		   		}
-		  	});
-		  	/*buttons actions*/
-		  	$("#btn1").click(function(){
-			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100},delay:1, ease:Power2.easeOut});
-			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
-			  	// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
-			  	setTimeout(function(){
-			  		$("#pagecaption").text("Activity Calendar");
-			  		TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut})
-			  	},500);
-		  	});
-		  	$("#btn2").click(function(){
-			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
-			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
-			  	// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
-			  	setTimeout(function(){
-				  	$("#pagecaption").text("Reservation");
-				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	},500);
-		  	});
-		  	$("#btn3").click(function(){
-			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
-			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
-			  	// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
-			  	setTimeout(function(){
-				  	$("#pagecaption").text("Report");
-				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	},500);
-		  	});
-		  	$("#btn4").click(function(){
-			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
-			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
-			  	// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
-			  	setTimeout(function(){
-			  		$("#pagecaption").text("Visitor Registration");
-				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	},500);
-		  	});
-		  	$("#btn5").click(function(){
-			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
-			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
-			  	// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
-			  	setTimeout(function(){
-				  	$("#pagecaption").text("Inventory");
-				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	},500);
-		  	});
-		   	$("#btn6").click(function(){
-			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100}, ease:Power2.easeOut});
-			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
-			  	// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
-			  	setTimeout(function(){
-			  		$("#pagecaption").text("key Management");
-				  	TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	},500);
-		  	});
-		   	/*inner buttons actions*/
-		  	$("#innerbtn1").click(function(){
-			  	TweenLite.to($("#blockcaption"),2,{css:{top:-100},delay:1, ease:Power2.easeOut});
-			  	TweenLite.to($("#inner-block"),2,{css:{left:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#backbutton"),1,{css:{right:-50, rotation:0}, ease:Power2.easeOut});
-			  	TweenLite.to($("#innerbackbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
-			  	setTimeout(function(){
-			  		$("#pagecaption").text("Activity inner Calendar");
-			  		TweenLite.to($("#pagecaption"),2,{css:{top:0}, ease:Power2.easeOut})
-			  	},500);
-		  	});
+			TweenLite.to($("#blockcaption"), 2, { css: { top: 0 }, delay: 1, ease: Power2.easeOut });
+			var innerBtn = $(".inner-block-btn");
+			for (var i = 0; i < innerBtn.length; i++) {
+				left_val = (15 * i) + 15;
+				var innerBtnId = innerBtn.eq(i).attr("id");
+				$("#" + innerBtnId).css({ 'left': left_val, });
+			}
 
-		  	/*outer back button action*/
-		   	$("#backbutton").click(function(){
-			    TweenLite.to($("#content"),1,{css:{top:500}, ease:Power2.easeIn});
-				TweenLite.to($("#backbutton"),1,{css:{right:-50, rotation:0}, ease:Power2.easeIn});
-				TweenLite.to($("#inner-block"),3,{css:{left:1500},ease:Power2.easeOut});
-				TweenLite.to($("#pagecaption"),1,{css:{top:-100}, ease:Power2.easeIn});
-				TweenLite.to($("#blockcaption"),1,{css:{top:0}, ease:Power2.easeOut});
-			});
+			// $(".card").mouseenter(function(){
+			// 	$(this).find('p').fadeOut();
+			// })
+			// $(".card").mouseleave(function(){
+			// 	$(this).find('p').fadeIn();
+			// 	// setTimeout(function(){
+			// 	// 	$(this).find('p').fadeIn()
+			// 	// },500);
+				
+			// })
+		});
+		/*buttons actions*/
+		$("#btn1").click(function () {
+			TweenLite.to($("#blockcaption"), 2, { css: { top: -100 }, delay: 1, ease: Power2.easeOut });
+			TweenLite.to($("#inner-block"), 2, { css: { left: 0 }, ease: Power2.easeOut });
+			// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			TweenLite.to($("#backbutton"), 1, { css: { right: 15, rotation: -180 }, ease: Power2.easeOut });
+			setTimeout(function () {
+				$("#pagecaption").text("Activity Calendar");
+				TweenLite.to($("#pagecaption"), 2, { css: { top: 0 }, ease: Power2.easeOut })
+			}, 500);
+		});
+		$("#btn2").click(function () {
+			TweenLite.to($("#blockcaption"), 2, { css: { top: -100 }, ease: Power2.easeOut });
+			TweenLite.to($("#inner-block"), 2, { css: { left: 0 }, ease: Power2.easeOut });
+			// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			TweenLite.to($("#backbutton"), 1, { css: { right: 15, rotation: -180 }, ease: Power2.easeOut });
+			setTimeout(function () {
+				$("#pagecaption").text("Reservation");
+				TweenLite.to($("#pagecaption"), 2, { css: { top: 0 }, ease: Power2.easeOut });
+			}, 500);
+		});
+		$("#btn3").click(function () {
+			TweenLite.to($("#blockcaption"), 2, { css: { top: -100 }, ease: Power2.easeOut });
+			TweenLite.to($("#inner-block"), 2, { css: { left: 0 }, ease: Power2.easeOut });
+			// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			TweenLite.to($("#backbutton"), 1, { css: { right: 15, rotation: -180 }, ease: Power2.easeOut });
+			setTimeout(function () {
+				$("#pagecaption").text("Report");
+				TweenLite.to($("#pagecaption"), 2, { css: { top: 0 }, ease: Power2.easeOut });
+			}, 500);
+		});
+		$("#btn4").click(function () {
+			TweenLite.to($("#blockcaption"), 2, { css: { top: -100 }, ease: Power2.easeOut });
+			TweenLite.to($("#inner-block"), 2, { css: { left: 0 }, ease: Power2.easeOut });
+			// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			TweenLite.to($("#backbutton"), 1, { css: { right: 15, rotation: -180 }, ease: Power2.easeOut });
+			setTimeout(function () {
+				$("#pagecaption").text("Visitor Registration");
+				TweenLite.to($("#pagecaption"), 2, { css: { top: 0 }, ease: Power2.easeOut });
+			}, 500);
+		});
+		$("#btn5").click(function () {
+			TweenLite.to($("#blockcaption"), 2, { css: { top: -100 }, ease: Power2.easeOut });
+			TweenLite.to($("#inner-block"), 2, { css: { left: 0 }, ease: Power2.easeOut });
+			// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			TweenLite.to($("#backbutton"), 1, { css: { right: 15, rotation: -180 }, ease: Power2.easeOut });
+			setTimeout(function () {
+				$("#pagecaption").text("Inventory");
+				TweenLite.to($("#pagecaption"), 2, { css: { top: 0 }, ease: Power2.easeOut });
+			}, 500);
+		});
+		$("#btn6").click(function () {
+			TweenLite.to($("#blockcaption"), 2, { css: { top: -100 }, ease: Power2.easeOut });
+			TweenLite.to($("#inner-block"), 2, { css: { left: 0 }, ease: Power2.easeOut });
+			// TweenLite.to($("#content"),2,{css:{top:0}, ease:Power2.easeOut});
+			TweenLite.to($("#backbutton"), 1, { css: { right: 15, rotation: -180 }, ease: Power2.easeOut });
+			setTimeout(function () {
+				$("#pagecaption").text("key Management");
+				TweenLite.to($("#pagecaption"), 2, { css: { top: 0 }, ease: Power2.easeOut });
+			}, 500);
+		});
+		/*inner buttons actions*/
+		$("#innerbtn1").click(function () {
+			TweenLite.to($("#blockcaption"), 2, { css: { top: -100 }, delay: 1, ease: Power2.easeOut });
+			TweenLite.to($("#inner-block"), 2, { css: { left: 0 }, ease: Power2.easeOut });
+			TweenLite.to($("#content"), 2, { css: { top: 0 }, ease: Power2.easeOut });
+			TweenLite.to($("#backbutton"), 1, { css: { right: -50, rotation: 0 }, ease: Power2.easeOut });
+			TweenLite.to($("#innerbackbutton"), 1, { css: { right: 15, rotation: -180 }, ease: Power2.easeOut });
+			setTimeout(function () {
+				$("#pagecaption").text("Activity inner Calendar");
+				TweenLite.to($("#pagecaption"), 2, { css: { top: 0 }, ease: Power2.easeOut })
+			}, 500);
+		});
 
-			/*inner back button action*/
-			$("#innerbackbutton").click(function(){
-			    TweenLite.to($("#content"),1,{css:{top:500}, ease:Power2.easeIn});
-			    TweenLite.to($("#innerbackbutton"),1,{css:{right:-50, rotation:0}, ease:Power2.easeIn});
-				TweenLite.to($("#backbutton"),1,{css:{right:15, rotation:-180}, ease:Power2.easeOut});
-			});
-		</script>	
+		/*outer back button action*/
+		$("#backbutton").click(function () {
+			TweenLite.to($("#content"), 1, { css: { top: 500 }, ease: Power2.easeIn });
+			TweenLite.to($("#backbutton"), 1, { css: { right: -50, rotation: 0 }, ease: Power2.easeIn });
+			TweenLite.to($("#inner-block"), 3, { css: { left: 1500 }, ease: Power2.easeOut });
+			TweenLite.to($("#pagecaption"), 1, { css: { top: -100 }, ease: Power2.easeIn });
+			TweenLite.to($("#blockcaption"), 1, { css: { top: 0 }, ease: Power2.easeOut });
+		});
 
-	</body>
+		/*inner back button action*/
+		$("#innerbackbutton").click(function () {
+			TweenLite.to($("#content"), 1, { css: { top: 500 }, ease: Power2.easeIn });
+			TweenLite.to($("#innerbackbutton"), 1, { css: { right: -50, rotation: 0 }, ease: Power2.easeIn });
+			TweenLite.to($("#backbutton"), 1, { css: { right: 15, rotation: -180 }, ease: Power2.easeOut });
+		});
+	</script>
+
+</body>
+
 </html>
